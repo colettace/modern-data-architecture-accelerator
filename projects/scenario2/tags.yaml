@@ -1,0 +1,6 @@
+tags:
+  project: scenario2
+  blueprint: custom-scenario2
+  data_domain: scenario2
+  owner: data-platform
+  managed_by: mdaa

@@ -1,0 +1,61 @@
+region: default
+
+tag_configs:
+  - ./tags.yaml
+
+organization: <unique-org-name>
+
+domains:
+  scenario2:
+    environments:
+      dev:
+        account: default
+        module_configs:
+          - ./config/environments/dev.yaml
+        modules:
+          roles:
+            module_path: "@aws-mdaa/roles"
+            module_configs:
+              - ./roles.yaml
+          project:
+            module_path: "@aws-mdaa/dataops-project"
+            module_configs:
+              - ./infra/project.yaml
+          ingestion-job:
+            module_path: "@aws-mdaa/dataops-job"
+            module_configs:
+              - ./infra/ingestion-job.yaml
+          transformation-job:
+            module_path: "@aws-mdaa/dataops-job"
+            module_configs:
+              - ./infra/transformation-job.yaml
+          workflow:
+            module_path: "@aws-mdaa/dataops-workflow"
+            module_configs:
+              - ./orchestration/workflow.yaml
+      test:
+        account: default
+        module_configs:
+          - ./config/environments/test.yaml
+        modules:
+          roles:
+            module_path: "@aws-mdaa/roles"
+            module_configs:
+              - ./roles.yaml
+          project:
+            module_path: "@aws-mdaa/dataops-project"
+            module_configs:
+              - ./infra/project.yaml
+      prod:
+        account: default
+        module_configs:
+          - ./config/environments/prod.yaml
+        modules:
+          roles:
+            module_path: "@aws-mdaa/roles"
+            module_configs:
+              - ./roles.yaml
+          project:
+            module_path: "@aws-mdaa/dataops-project"
+            module_configs:
+              - ./infra/project.yaml

@@ -1,0 +1,5 @@
+job:
+  name: scenario2-transformation-job
+  type: glueetl
+  script_path: ./src/transformation/pipeline.py
+  description: Scenario 2 transformation job placeholder

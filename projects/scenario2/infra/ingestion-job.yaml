@@ -1,0 +1,5 @@
+job:
+  name: scenario2-ingestion-job
+  type: glueetl
+  script_path: ./src/ingestion/pipeline.py
+  description: Scenario 2 ingestion job placeholder

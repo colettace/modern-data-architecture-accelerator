@@ -1,0 +1,12 @@
+workflow_name: scenario2-workflow
+schedule: cron(0 * * * ? *)
+description: Scenario2 orchestration workflow placeholder
+steps:
+  - name: ingest
+    type: glue-job
+    job_ref: scenario2-ingestion-job
+  - name: transform
+    type: glue-job
+    job_ref: scenario2-transformation-job
+    depends_on:
+      - ingest

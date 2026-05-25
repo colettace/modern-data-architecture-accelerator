@@ -1,0 +1,5 @@
+alarms:
+  - name: scenario2-pipeline-failure-rate
+    metric: Scenario2/PipelineFailureCount
+    threshold: 1
+    comparison: GreaterThanOrEqualToThreshold
