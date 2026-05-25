@@ -1,0 +1,11 @@
+roles:
+  airflow-orchestrator:
+    trusted_principals:
+      - service: airflow.amazonaws.com
+    managed_policies:
+      - arn:aws:iam::aws:policy/service-role/AWSGlueServiceRole
+  scenario2-glue-etl:
+    trusted_principals:
+      - service: glue.amazonaws.com
+    managed_policies:
+      - arn:aws:iam::aws:policy/service-role/AWSGlueServiceRole

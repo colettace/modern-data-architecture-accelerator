@@ -1,0 +1,6 @@
+dashboard_name: scenario2-pipeline
+widgets:
+  - name: Pipeline Success Rate
+    metric: Scenario2/PipelineSuccessRate
+  - name: Pipeline Duration
+    metric: Scenario2/PipelineDurationSeconds

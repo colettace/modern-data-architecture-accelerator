@@ -1,0 +1,9 @@
+context:
+  environment: dev
+  data_admin_role_arn: <dev-data-admin-role-arn>
+  datalake_src_bucket_name: <dev-src-bucket>
+  datalake_src_prefix: scenario2/raw/
+  datalake_dest_bucket_name: <dev-dest-bucket>
+  datalake_dest_prefix: scenario2/curated/
+  glue_catalog_kms_arn: <dev-glue-kms-arn>
+  datalake_kms_arn: <dev-lake-kms-arn>

@@ -1,0 +1,6 @@
+project:
+  name: scenario2-project
+  description: DataOps project for Scenario 2 isolated resources
+  databases:
+    - scenario2_raw
+    - scenario2_curated
